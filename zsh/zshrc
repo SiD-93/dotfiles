@@ -1,0 +1,38 @@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' menu select=long-list select=0
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle :compinstall filename '/home/sid/.zshrc'
+
+autoload -Uz compinit promptinit
+compinit
+promptinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt extendedglob nomatch notify
+unsetopt appendhistory beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+
+# User config
+[[ $- != *i* ]] && return
+source ~/.zprezto/init.zsh
+export PATH=~/.npm-global/bin:$PATH
+export EDITOR="vim"
+export VISUAL=$EDITOR
+export LSCOLORS="exfxcxdxbxegedabagacad"
+bindkey '^R' history-incremental-search-backward
+alias tmux="tmux -2"
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=yellow'
+ZSH_HIGHLIGHT_STYLES[command]='fg=white,bold,bg=green'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=white,bold,bg=green'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=white,bold,bg=green'
+ZSH_HIGHLIGHT_STYLES[path]='bold'
+ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
+ZSH_HIGHLIGHT_PATTERNS+=('rm -fr *' 'fg=white,bold,bg=red')
+ZSH_HIGHLIGHT_PATTERNS+=('rm -f *' 'fg=white,bold,bg=red')
