@@ -2,6 +2,7 @@
 dots="zshrc zpreztorc vimrc tmux.conf"
 promptDir=~/.zprezto/modules/prompt/functions
 promptFile=prompt_jr0cket_setup
+termrc=~/.config/xfce4/terminal/terminalrc
 
 # Set up config files.
 for file in $dots; do
@@ -9,6 +10,12 @@ for file in $dots; do
     ln -isv `find ~/dotfiles | grep -i $file` ~/.$file
   fi
 done
+
+# Set up the terminal theme.
+if [ ! -f $termrc ]; then
+  ln -isv ~/dotfiles/terminalrc $termrc
+  #echo $termrc
+fi
 
 # Set the prompt theme.
 if [ ! -d $promptDir ]; then

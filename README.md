@@ -18,6 +18,7 @@ chmod +x init.sh
 
 ## TODO
 
-- [ ] Vagrant
-- [ ] terminalrc
+- [x] terminalrc.
+- [ ] Vagrant.
 - [ ] .gitconfig?
+- [ ] Auto install dependencies.
