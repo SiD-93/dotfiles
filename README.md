@@ -19,4 +19,5 @@ chmod +x init.sh
 ## TODO
 
 - [ ] Vagrant
+- [ ] terminalrc
 - [ ] .gitconfig?
