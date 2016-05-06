@@ -14,7 +14,6 @@ done
 # Set up the terminal theme.
 if [ ! -f $termrc ]; then
   ln -isv ~/dotfiles/terminalrc $termrc
-  #echo $termrc
 fi
 
 # Set the prompt theme.
@@ -26,7 +25,7 @@ else
   fi
 fi
 
-# Set up the vim directory
+# Set up the vim directory.
 if [ ! -d ~/.vim ]; then
   ln -isv ~/dotfiles/vim ~/.vim
 fi
