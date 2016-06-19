@@ -64,3 +64,10 @@ nnoremap <silent><S-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 " Jedi - Awesome python autocomplete. Install python2-jedi and vim-jedi.
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 0 " Use <C-Space> to bring up the popup.
+
+" ctrlp.vim - Fuzzy finder for vim.
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" disable storing of .netrwhist files.
+let g:netrw_dirhistmax = 0
+
