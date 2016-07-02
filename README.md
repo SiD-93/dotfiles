@@ -2,7 +2,7 @@
 
 A collection of my dotfiles. To use them, `clone` them into your home directory so that the path is `~/dotfiles`.
 
-Includes my configs for [Zsh](www.zsh.org), [Vim](www.vim.org), [Prezto](https://github.com/sorin-ionescu/prezto), [tmux](https://tmux.github.io/) and [Conky](https://github.com/brndnmtthws/conky).
+Includes my configs for Zsh, Vim, Prezto, tmux and Conky.
 
 *Also includes a `.desktop` file that I use to autostart Conky when XFCE starts. I don't know if this works on all DEs.*
 
