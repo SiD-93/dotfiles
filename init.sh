@@ -30,12 +30,17 @@ if [ ! -d ~/.vim ]; then
   ln -isv ~/dotfiles/vim ~/.vim
 fi
 
+# Set up Redshift.
+if [ ! -f ~/.config/redshift.conf ]; then
+  ln -isv ~/dotfiles/redshift.conf ~/.config/redshift.conf
+fi
+
 # Set up Conky config.
 if [ ! -d ~/.config/conky ]; then
   ln -isv ~/dotfiles/conky ~/.config/conky
 fi
 
-# Link autostart for Conky.
+# Link autostart stuff.
 if [ ! -d ~/.config/autostart ]; then
   ln -isv ~/dotfiles/autostart ~/.config/autostart
 fi
