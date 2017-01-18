@@ -1,10 +1,10 @@
 # Dotfiles
 
-A collection of my dotfiles. To use them, `clone` them into your home directory so that the path is `~/dotfiles`.
+A collection of my dotfiles. To use them, `clone` them into your home directory so that the path is `~/dotfiles` and run the `init.sh` script.
 
-Includes my configs for Zsh, Vim, Prezto, tmux and Conky.
+Includes my configs for Conky, Prezto, Redshift, Vim, tmux and Zsh.
 
-*Also includes a `.desktop` file that I use to autostart Conky when XFCE starts. I don't know if this works on all DEs.*
+*Also includes `.desktop` files that I use to autostart Conky and Redshift when my DE starts. I don't know if this works on all DEs.*
 
 The script assumes that all required packages are installed and that Zsh is the default shell (I might add the functionality to download all missing packages and set the default shell, later).
 
@@ -18,7 +18,8 @@ chmod +x init.sh
 
 ## TODO
 
-- [x] terminalrc
 - [ ] ~~Vagrant~~ Docker?
 - [ ] .gitconfig?
+- [ ] .npmrc?
 - [ ] Auto install dependencies.
+- [ ] Prezto seems to be slowing down my terminal launches... Remove?
