@@ -3,9 +3,10 @@ Encoding=UTF-8
 Version=0.9.4
 Type=Application
 Name=Conky
-Comment=Enable Conky at start of XFCE
+Comment=Enable Conky at start
 Exec=bash -c "sleep 5; conky -d;"
 StartupNotify=false
 Terminal=false
 Hidden=false
 
+X-MATE-Autostart-enabled=true

@@ -21,6 +21,7 @@ filetype plugin indent on
 set autoindent
 
 " Show line number.
+set relativenumber
 set number
 
 " Don't use those .~ files.
